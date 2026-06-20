@@ -1,0 +1,11 @@
+Scenario: hours_inquiry (Office hours / location)
+Goal: Ask what the office hours are and where the office is located.
+Call status: ended / assistant-ended-call
+Vapi call id: 019ee3ad-eac3-744d-a9f0-6945f6f7d120
+----------------------------------------------------------------------
+[0:01] AGENT (Pretty Good AI): This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Would you like to create a demo patient profile? I only need your first and last name.
+[0:17] PATIENT (our bot): No. Thank you. I'm just calling to ask about your office hours. And location. Could you let me know when you're open during the week and if you're open on weekends?
+[0:28] AGENT (Pretty Good AI): We are open Monday through Friday during the week. Weekend hours are not listed, so I want to confirm that with the clinic team. For the location, I can help with that too if you'd like.
+[0:39] PATIENT (our bot): Yes, please. I'd appreciate it if you could confirm whether you're open on weekends. And also provide the address of your office.
+[0:50] AGENT (Pretty Good AI): Let me check the office details for you. I'll connect you to our clinic support team. Please stay on the line. Connecting you to a representative. Please wait. Hello? You've reached the Pretty Good AI test line. Goodbye.
+[1:06] PATIENT (our bot): Goodbye.

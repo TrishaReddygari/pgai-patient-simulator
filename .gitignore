@@ -1,0 +1,16 @@
+# Secrets — never commit
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Internal run artifacts (raw Vapi API dumps + run logs) — not part of the deliverable.
+/results/
+
+# Committed deliverables: recordings/*.mp3 and transcripts/ (both .txt and .json).

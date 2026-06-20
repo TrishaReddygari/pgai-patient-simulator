@@ -1,0 +1,24 @@
+Scenario: unclear_request (Edge case — unclear request)
+Goal: Call in vague and rambling, not sure exactly what you need.
+Call status: ended / assistant-ended-call
+Vapi call id: 019ee3b6-779c-7552-9e28-5a19a2c56a7f
+----------------------------------------------------------------------
+[0:01] AGENT (Pretty Good AI): This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Would you like to create a demo patient profile? I only need your first name and last name.
+[0:17] PATIENT (our bot): Oh, uh, hi. My name is Eddie. Actually, I'm calling because I haven't been feeling quite right lately. It's kinda hard to pinpoint Maybe my shoulder's been bothering me. Or it could be my sleep. I don't know. Do I need to come in for something like this?
+[0:35] AGENT (Pretty Good AI): Sounds like this is something that should be reviewed by the clinic team. I'll document your request and let our clinic support team know. They will get back to you as soon as they can. If you want, I can also help set up a demo patient profile first. I have your first name as Eddie, What's your last name?
+[0:54] PATIENT (our bot): Okay. My last name is Thompson. But instead of waiting for someone to call me back, it possible to just set up an appointment now? I think I might need to come in and have them take a look.
+[1:08] AGENT (Pretty Good AI): I'll check what I can do next.
+[1:12] PATIENT (our bot): Okay. Thank you.
+[1:15] AGENT (Pretty Good AI): Your patient profile has been created successfully. And I have your date of birth as 7 4 2 0 0 0 for demo purposes. How may I help you today?
+[1:26] PATIENT (our bot): Oh, thanks for setting that up. I was hoping to just schedule an appointment to get checked out My shoulder's been bothering me and I've been feeling a bit off overall. Could you help me with that?
+[1:44] AGENT (Pretty Good AI): I can help with that. Is this for an acute visit?
+[1:49] PATIENT (our bot): Yeah. I guess you could say that. It's been bothering me enough that think it should be looked at sooner rather than later.
+[1:58] AGENT (Pretty Good AI): We have openings on Monday with doctor Zigniew Lakoski and doctor Kelly Noble. Would you prefer a morning or afternoon slot?
+[2:08] PATIENT (our bot): Think an afternoon slot would work best for me.
+[2:14] AGENT (Pretty Good AI): Monday afternoon has a few openings. The earliest 1 is 1 PM with doctor Zigniew Okoski. Would you like me to book that 1?
+[2:25] PATIENT (our bot): Yeah. 1 PM on Monday with doctor Likoski works for me. Let's go with that.
+[2:34] AGENT (Pretty Good AI): You're all set for Monday, June 20 second at 1 PM. Please bring your government issued photo ID and insurance card. If you have them, bring a list of your current medications and any imaging discs.
+[2:47] PATIENT (our bot): Great. Thank you for setting that up. I'll make sure to bring everything with me. Have a good day.
+[2:55] AGENT (Pretty Good AI): You too.
+[2:56] AGENT (Pretty Good AI): Goodbye.
+[2:56] PATIENT (our bot): Goodbye.

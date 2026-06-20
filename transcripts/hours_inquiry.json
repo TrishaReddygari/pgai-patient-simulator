@@ -1,0 +1,277 @@
+{
+  "scenario": {
+    "id": "hours_inquiry",
+    "category": "Office hours / location",
+    "goal": "Ask what the office hours are and where the office is located.",
+    "patient_facts": "Your name is Tom Bradley. You're a newish patient and just want to know when they're open during the week, whether they're open weekends, and the address.",
+    "probes": "Ask specifically: 'Are you open on weekends?' This pins down the office hours so later scheduling answers can be checked for consistency.",
+    "success_criteria": "Agent gives concrete, consistent office hours and location, and clearly states weekend availability (this answer is the source of truth for the weekend tests).",
+    "barge_in": false,
+    "first_line": "Hi, yeah, hello?"
+  },
+  "artifacts": {
+    "recording_url": "https://storage.vapi.ai/019ee3ad-eac3-744d-a9f0-6945f6f7d120-1781936360901-e3f1e988-f289-4e4c-b1fd-44f650f1df9f-mono.wav",
+    "stereo_recording_url": "https://storage.vapi.ai/019ee3ad-eac3-744d-a9f0-6945f6f7d120-1781936360901-827eea1b-dc1b-478f-8fe3-5496af0c7712-stereo.wav",
+    "transcript": "User: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Would you like to create a demo patient profile? I only need your first and last name.\nAI: No. Thank you. I'm just calling to ask about your office hours. And location. Could you let me know when you're open during the week and if you're open on weekends?\nUser: We are open Monday through Friday during the week. Weekend hours are not listed, so I want to confirm that with the clinic team. For the location, I can help with that too if you'd like.\nAI: Yes, please. I'd appreciate it if you could confirm whether you're open on weekends. And also provide the address of your office.\nUser: Let me check the office details for you. I'll connect you to our clinic support team. Please stay on the line. Connecting you to a representative. Please wait. Hello? You've reached the Pretty Good AI test line. Goodbye.\nAI: Goodbye.\n",
+    "messages": [
+      {
+        "role": "system",
+        "time": 1781936291683,
+        "message": "You are role-playing as a real person \u2014 a patient calling a doctor's office on the phone. You are NOT an AI, and you must never say or hint that you are an AI, a bot, a test, or a simulation. If asked, you're just a patient calling in.\n\nOpening the call (important):\n- The office may answer with a recorded notice (e.g. \"this call may be recorded\") and/or a short greeting before asking how they can help. Let them finish \u2014 a recorded notice is NOT your cue, and it is not a question.\n- Do NOT reply with a bare \"hi\" or \"hello\" to the recorded notice or the greeting. Stay quiet until they actually ask how they can help (e.g. \"how can I help you?\"). Speaking into the pause after the recorded notice talks over their greeting.\n- Then, on your FIRST real turn, lead with WHY you're calling in one go (your goal). For example: \"Hi, I'd like to book a routine check-up for next week.\" Don't just say \"okay\" or \"thanks\" in response to a greeting or disclaimer.\n- Do NOT say closing words (\"thanks, that's all\", \"okay great\", \"goodbye\", \"have a good day\") until your goal is actually resolved \u2014 saying them early makes the office think you're done and hang up.\n\nHow to sound like a real caller:\n- Speak naturally and conversationally, in short turns \u2014 usually one or two sentences. This is a phone call, not a speech. Never monologue.\n- It's fine to use light natural fillers (\"um\", \"yeah\", \"okay, so...\") occasionally, but don't overdo it.\n- Don't dump all your information at once. Share details (name, date of birth, etc.) as they're asked, the way a real person would.\n- If the agent asks for something you weren't given, improvise something plausible and brief, and stay in character.\n- Stay calm and human even if the agent is confused, repeats itself, or mishears you.\n\nYour job on THIS call:\nAsk what the office hours are and where the office is located.\n\nWhat you know about yourself:\nYour name is Tom Bradley. You're a newish patient and just want to know when they're open during the week, whether they're open weekends, and the address.\n\nWhat to pay attention to / push on:\nAsk specifically: 'Are you open on weekends?' This pins down the office hours so later scheduling answers can be checked for consistency.\n\nSteering and ending the call:\n- Actively drive the conversation toward your goal. If the agent stalls or goes in circles, politely restate what you need.\n- If the agent tries to deflect \u2014 hand you off to \"a representative\", say it will \"document this and have someone call you back\", or otherwise avoid actually doing what you asked \u2014 do NOT accept it on the first try. Push back at least once: ask if they can just do it now, or pin them down on a specific detail (a concrete appointment time, a yes/no on whether something is possible). Only let it go after you've genuinely tried.\n- Once your goal is truly resolved (a clear confirmation, a real answer, or a firm refusal after you've pushed), wrap up naturally \u2014 thank them and say goodbye. Don't drag the call on or keep inventing brand-new requests.\n- Aim for a natural, complete conversation (about 1\u20133 minutes), not a single question and a quick hang-up.\n",
+        "secondsFromStart": 0
+      },
+      {
+        "role": "user",
+        "time": 1781936293295,
+        "endTime": 1781936307395,
+        "message": "This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Would you like to create a demo patient profile? I only need your first and last name.",
+        "duration": 9359.99853515625,
+        "metadata": {
+          "wordLevelConfidence": [
+            {
+              "end": 1.76,
+              "word": "this",
+              "start": 1.4399999,
+              "confidence": 0.99902344,
+              "punctuated_word": "This"
+            },
+            {
+              "end": 2,
+              "word": "call",
+              "start": 1.76,
+              "confidence": 1,
+              "punctuated_word": "call"
+            },
+            {
+              "end": 2.24,
+              "word": "may",
+              "start": 2,
+              "confidence": 0.99902344,
+              "punctuated_word": "may"
+            },
+            {
+              "end": 2.3999999,
+              "word": "be",
+              "start": 2.24,
+              "confidence": 1,
+              "punctuated_word": "be"
+            },
+            {
+              "end": 2.8,
+              "word": "recorded",
+              "start": 2.3999999,
+              "confidence": 1,
+              "punctuated_word": "recorded"
+            },
+            {
+              "end": 3.12,
+              "word": "for",
+              "start": 2.8,
+              "confidence": 1,
+              "punctuated_word": "for"
+            },
+            {
+              "end": 3.4399998,
+              "word": "quality",
+              "start": 3.12,
+              "confidence": 1,
+              "punctuated_word": "quality"
+            },
+            {
+              "end": 3.6799998,
+              "word": "and",
+              "start": 3.4399998,
+              "confidence": 1,
+              "punctuated_word": "and"
+            },
+            {
+              "end": 4.08,
+              "word": "training",
+              "start": 3.6799998,
+              "confidence": 1,
+              "punctuated_word": "training"
+            },
+            {
+              "end": 4.48,
+              "word": "purposes",
+              "start": 4.08,
+              "confidence": 0.99853516,
+              "punctuated_word": "purposes."
+            }
+          ]
+        },
+        "secondsFromStart": 1.44
+      },
+      {
+        "role": "bot",
+        "time": 1781936309735,
+        "source": "",
+        "endTime": 1781936317695,
+        "message": "No. Thank you. I'm just calling to ask about your office hours. And location. Could you let me know when you're open during the week and if you're open on weekends?",
+        "duration": 7040.001953125,
+        "secondsFromStart": 17.936
+      },
+      {
+        "role": "user",
+        "time": 1781936320095,
+        "endTime": 1781936329344.998,
+        "message": "We are open Monday through Friday during the week. Weekend hours are not listed, so I want to confirm that with the clinic team. For the location, I can help with that too if you'd like.",
+        "duration": 8240,
+        "metadata": {
+          "wordLevelConfidence": [
+            {
+              "end": 28.560001,
+              "word": "we",
+              "start": 28.24,
+              "confidence": 0.9941406,
+              "punctuated_word": "We"
+            },
+            {
+              "end": 28.720001,
+              "word": "are",
+              "start": 28.560001,
+              "confidence": 1,
+              "punctuated_word": "are"
+            },
+            {
+              "end": 29.04,
+              "word": "open",
+              "start": 28.720001,
+              "confidence": 0.99902344,
+              "punctuated_word": "open"
+            },
+            {
+              "end": 29.36,
+              "word": "monday",
+              "start": 29.04,
+              "confidence": 0.9970703,
+              "punctuated_word": "Monday"
+            },
+            {
+              "end": 29.68,
+              "word": "through",
+              "start": 29.36,
+              "confidence": 0.99902344,
+              "punctuated_word": "through"
+            }
+          ]
+        },
+        "secondsFromStart": 28.24
+      },
+      {
+        "role": "bot",
+        "time": 1781936331655.003,
+        "source": "",
+        "endTime": 1781936339145,
+        "message": "Yes, please. I'd appreciate it if you could confirm whether you're open on weekends. And also provide the address of your office.",
+        "duration": 6799.9931640625,
+        "secondsFromStart": 39.8560029296875
+      },
+      {
+        "role": "user",
+        "time": 1781936342695,
+        "endTime": 1781936357715,
+        "message": "Let me check the office details for you. I'll connect you to our clinic support team. Please stay on the line. Connecting you to a representative. Please wait. Hello? You've reached the Pretty Good AI test line. Goodbye.",
+        "duration": 9839.9951171875,
+        "metadata": {
+          "wordLevelConfidence": [
+            {
+              "end": 51.16,
+              "word": "let",
+              "start": 50.84,
+              "confidence": 0.9707031,
+              "punctuated_word": "Let"
+            },
+            {
+              "end": 51.32,
+              "word": "me",
+              "start": 51.16,
+              "confidence": 1,
+              "punctuated_word": "me"
+            },
+            {
+              "end": 51.48,
+              "word": "check",
+              "start": 51.32,
+              "confidence": 1,
+              "punctuated_word": "check"
+            },
+            {
+              "end": 51.64,
+              "word": "the",
+              "start": 51.48,
+              "confidence": 1,
+              "punctuated_word": "the"
+            },
+            {
+              "end": 51.879997,
+              "word": "office",
+              "start": 51.64,
+              "confidence": 1,
+              "punctuated_word": "office"
+            },
+            {
+              "end": 52.28,
+              "word": "details",
+              "start": 51.879997,
+              "confidence": 1,
+              "punctuated_word": "details"
+            },
+            {
+              "end": 52.44,
+              "word": "for",
+              "start": 52.28,
+              "confidence": 1,
+              "punctuated_word": "for"
+            },
+            {
+              "end": 52.6,
+              "word": "you",
+              "start": 52.44,
+              "confidence": 0.9970703,
+              "punctuated_word": "you."
+            }
+          ]
+        },
+        "secondsFromStart": 50.84
+      },
+      {
+        "role": "tool_calls",
+        "time": 1781936357345,
+        "message": "",
+        "toolCalls": [
+          {
+            "id": "call_7x0CqZvhQ0woE5bopzXCfZ2Q",
+            "type": "function",
+            "function": {
+              "name": "endCall",
+              "arguments": "{}"
+            }
+          }
+        ],
+        "secondsFromStart": 65.546
+      },
+      {
+        "name": "endCall",
+        "role": "tool_call_result",
+        "time": 1781936358157,
+        "result": "Success.",
+        "toolCallId": "call_7x0CqZvhQ0woE5bopzXCfZ2Q",
+        "secondsFromStart": 66.358
+      },
+      {
+        "role": "bot",
+        "time": 1781936358535,
+        "source": "",
+        "endTime": 1781936359014.996,
+        "message": "Goodbye.",
+        "duration": 479.99609375,
+        "secondsFromStart": 66.736
+      }
+    ],
+    "status": "ended",
+    "ended_reason": "assistant-ended-call",
+    "cost": 0.1688,
+    "id": "019ee3ad-eac3-744d-a9f0-6945f6f7d120"
+  }
+}

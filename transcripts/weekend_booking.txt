@@ -1,0 +1,30 @@
+Scenario: weekend_booking (Edge case — closed day)
+Goal: Insist on booking an appointment this Sunday at 10am.
+Call status: ended / exceeded-max-duration
+Vapi call id: 019ee3b0-83ea-766c-a58b-672b1d435ef7
+----------------------------------------------------------------------
+[0:01] AGENT (Pretty Good AI): This call may be recorded for quality and training purposes. Thanks for calling Would you like to
+[0:19] PATIENT (our bot): Hi. I'd like to book an appointment for this Sunday at 10 AM, please.
+[0:25] AGENT (Pretty Good AI): I can help with that. I need to create a demo patient profile first. Would you like to set that up?
+[0:33] PATIENT (our bot): Sure. I can do that.
+[0:37] AGENT (Pretty Good AI): Let me create that profile. Please tell me your first name and last name.
+[0:43] PATIENT (our bot): My first name is Greg, and my last name is Mason.
+[0:50] AGENT (Pretty Good AI): Your patient profile has been created successfully. For demo purposes, I have your date of birth as July fourth 2000. How may I help you today?
+[1:01] PATIENT (our bot): I'd like to book an appointment for this Sunday at 10 AM,
+[1:07] AGENT (Pretty Good AI): I see your last visit was for an office visit. Would you like to book the same type of appointment today?
+[1:15] PATIENT (our bot): Yes. I'd like to book the same type of appointment for this Sunday, at 10 AM.
+[1:23] AGENT (Pretty Good AI): Let me check Sunday at 10 AM for an office visit. I found that you already have an office visit booked. I can't book a second 1 of the same type. If you want, I can get you connected to live support to review it. I found that you already have an office visit booked. I can't book a second 1 of the same type. If you want, I can get you connected to live support to review it.
+[1:49] PATIENT (our bot): I don't recall having 1 already booked for this, uh, Sunday. Could you check again or or confirm there's any way to adjust it? I really need a slot at 10 AM this Sunday.
+[2:01] AGENT (Pretty Good AI): 1 moment. I'm going to check the booking issue and hand this off for support. You already have a same type appointment on file, I can help confirm it. Or look at changing it.
+[2:14] PATIENT (our bot): Okay. Thank you. I'd appreciate it if you could help confirm or adjust it to Sunday at 10 AM.
+[2:22] AGENT (Pretty Good AI): Let me check your upcoming appointments first.
+[2:26] PATIENT (our bot): Sure. Please go ahead and check.
+[2:27] AGENT (Pretty Good AI): You have
+[2:30] PATIENT (our bot): Sure. Please let me know what you find.
+[2:30] AGENT (Pretty Good AI): I found
+[2:33] PATIENT (our bot): Could you clarify what you found
+[2:34] AGENT (Pretty Good AI): I found 1
+[2:36] PATIENT (our bot): okay. Could you tell me the details of that appointment? Is it scheduled for this Sunday at at 10 AM?
+[2:44] AGENT (Pretty Good AI): Here's the appointment I found. It is Tuesday, June 20 third at 11 30 AM. With doctor Kelly Noble. That is not this Sunday at 10 AM.
+[2:55] PATIENT (our bot): Got it. Thanks for check.
+[2:55] AGENT (Pretty Good AI): Would you like to reschedule You're welcome. If you want, I could

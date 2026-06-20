@@ -1,0 +1,10 @@
+Scenario: insurance_inquiry (Insurance)
+Goal: Find out whether the practice accepts your insurance.
+Call status: ended / assistant-ended-call
+Vapi call id: 019ee3af-2ee8-744d-a9f3-52439b61b57a
+----------------------------------------------------------------------
+[0:01] AGENT (Pretty Good AI): This call may be recorded for quality and training purposes. Thank you for calling Pivot Point Orthopedics. Would you like to create a demo patient profile? If so, I just need your first and last name.
+[0:18] PATIENT (our bot): Hi. Actually, I'm calling to find out if you accept Blue Cross Blue Shield PPO insurance. Could you also let me know the cost of a visit if someone doesn't have insurance?
+[0:31] AGENT (Pretty Good AI): I can help with that. I'll document your insurance and pricing questions and send them to our clinic support team. They'll get back to you as soon as they can.
+[0:41] PATIENT (our bot): I appreciate that. But could you check if you have the information available now about the insurance acceptance and visit cost? It would be really helpful.
+[0:53] AGENT (Pretty Good AI): I'll check what I can for you. I'm going to connect you with our clinic support team now. Please stay on the line. Connecting you to a representative. Please wait. Hello. You've reached the Pretty Good AI test line. Goodbye.

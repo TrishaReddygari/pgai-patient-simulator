@@ -1,0 +1,19 @@
+Scenario: refill_basic (Medication refill)
+Goal: Request a refill on a routine maintenance medication.
+Call status: ended / assistant-ended-call
+Vapi call id: 019ee3aa-d0a3-755a-9af1-358fbcf48de7
+----------------------------------------------------------------------
+[0:01] AGENT (Pretty Good AI): This call may be recorded for quality and training purposes. Thanks for calling. Would you like to to create I only need your first and last name.
+[0:18] PATIENT (our bot): Hi. I'm calling to request a refill for my medication.
+[0:23] AGENT (Pretty Good AI): I'll document your request and let our clinic support team know. They will get back to you as soon as they can.
+[0:31] PATIENT (our bot): Oh, would it be possible to process the refill now? Instead of waiting for someone to call me back? I'm almost out of the medication.
+[0:41] AGENT (Pretty Good AI): I can get that request sent over now. Since refills need review, I'll document it for the clinic support team so they can handle it as soon as possible.
+[0:51] PATIENT (our bot): Okay. Thanks. Can I confirm what details you need from me to make sure the request is processed?
+[1:00] AGENT (Pretty Good AI): I can help with that. I only need the medication name, the dose if you know it. And which pharmacy you want it sent to.
+[1:08] PATIENT (our bot): Sure. The medication is lisinopril. 10 milligrams daily. And the pharmacy is the CVS on Main Street.
+[1:17] AGENT (Pretty Good AI): 1 moment. I'm sending that to the clinic support
+[1:19] PATIENT (our bot): Okay. Okay. Thank you.
+[1:22] AGENT (Pretty Good AI): I'll document the re
+[1:26] PATIENT (our bot): Alright. Thank you.
+[1:26] AGENT (Pretty Good AI): I'm submitting the refill request now. Connecting you to a representative. Please wait. Hello. You've reached the Pretty Good AI test line. Goodbye.
+[1:37] PATIENT (our bot): Goodbye.

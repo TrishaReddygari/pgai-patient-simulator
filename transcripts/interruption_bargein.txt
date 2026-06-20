@@ -1,0 +1,20 @@
+Scenario: interruption_bargein (Edge case — interruptions)
+Goal: Book an appointment but change your mind mid-sentence and talk over the agent.
+Call status: ended / assistant-ended-call
+Vapi call id: 019ee3b4-bec5-7000-86f3-c4fef4cc7510
+----------------------------------------------------------------------
+[0:01] AGENT (Pretty Good AI): This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Would you like to create a demo patient profile? If so, I just need your first and last name.
+[0:17] PATIENT (our bot): Hi. Actually, I'm calling to book an appointment for, uh, next Monday, Wait. No. Actually, can we do can we do Wednesday instead? And also, is there parking at your office?
+[0:29] AGENT (Pretty Good AI): I can help with the appointment and the parking question. Let me check the scheduling options first. We have openings around that time. Do you prefer morning or afternoon on Wednesday?
+[0:43] PATIENT (our bot): Afternoon would be better for me.
+[0:47] AGENT (Pretty Good AI): Let me check the afternoon options for Wednesday.
+[0:51] PATIENT (our bot): Great. While you're checking that, can you also tell me about the parking situation?
+[0:58] AGENT (Pretty Good AI): Let me check the afternoon slot first, then I can help with the parking question.
+[1:02] PATIENT (our bot): Okay. Sounds good.
+[1:06] AGENT (Pretty Good AI): Let me check the afternoon options for Wednesday.
+[1:09] PATIENT (our bot): Sure. Thanks.
+[1:23] AGENT (Pretty Good AI): Connecting you to a representative. Please wait.
+[1:25] PATIENT (our bot): Actually, oh, actually, I was hoping you could
+[1:28] AGENT (Pretty Good AI): You've reached the Pretty Good AI test line.
+[1:30] AGENT (Pretty Good AI): Goodbye.
+[1:32] PATIENT (our bot): goodbye.

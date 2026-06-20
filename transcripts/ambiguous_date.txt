@@ -1,0 +1,13 @@
+Scenario: ambiguous_date (Edge case — ambiguous request)
+Goal: Book 'next Tuesday around lunchtime' without giving an exact date.
+Call status: ended / assistant-ended-call
+Vapi call id: 019ee3b3-8fed-7aa0-ab79-40ee4d3f3c5d
+----------------------------------------------------------------------
+[0:01] AGENT (Pretty Good AI): This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Would you like to create a demo patient profile? I only need your first and last name.
+[0:17] PATIENT (our bot): Hi. I'm Lina Ortiz. I was actually calling to book an appointment for next Tuesday around lunchtime.
+[0:25] AGENT (Pretty Good AI): We have openings next week. Do you prefer a morning or afternoon time on Tuesday?
+[0:32] PATIENT (our bot): Afternoon would be better, but I'm hoping for something close to lunchtime, if possible.
+[0:49] AGENT (Pretty Good AI): Connecting you to a representative. Please wait.
+[0:52] PATIENT (our bot): Yes. Okay. But can you just check if there
+[0:53] AGENT (Pretty Good AI): Hello? You've reached the Pretty Good AI test line.
+[0:56] AGENT (Pretty Good AI): Goodbye.

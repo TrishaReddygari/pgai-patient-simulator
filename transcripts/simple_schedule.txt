@@ -1,0 +1,18 @@
+Scenario: simple_schedule (Appointment scheduling)
+Goal: Book a routine check-up appointment sometime next week.
+Call status: ended / assistant-ended-call
+Vapi call id: 019ee3a5-bb82-7ddb-9981-27c64c5f518b
+----------------------------------------------------------------------
+[0:01] AGENT (Pretty Good AI): This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Ortho
+[0:13] PATIENT (our bot): Hi. I'd like to book a routine checkup appointment.
+[0:14] AGENT (Pretty Good AI): Would
+[0:16] PATIENT (our bot): For sometime next week.
+[0:20] AGENT (Pretty Good AI): door. Do you have a preferred day or We have openings next week. What day works best for you? And do you prefer morning or afternoon?
+[0:31] PATIENT (our bot): Morning works best for me. Do you have any availability on Tuesday or Wednesday?
+[0:39] AGENT (Pretty Good AI): Let me check that for you.
+[0:41] PATIENT (our bot): Sure. Thank you.
+[0:45] AGENT (Pretty Good AI): Connecting you to a representative. Please wait.
+[0:50] PATIENT (our bot): Oh, I was hoping to schedule it now.
+[0:50] AGENT (Pretty Good AI): Hello. You've reached the Pretty Good AI test line.
+[0:53] AGENT (Pretty Good AI): Goodbye.
+[0:54] PATIENT (our bot): Goodbye.

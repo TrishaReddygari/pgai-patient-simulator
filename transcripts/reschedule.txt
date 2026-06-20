@@ -1,0 +1,21 @@
+Scenario: reschedule (Rescheduling)
+Goal: Move an existing appointment to a later date.
+Call status: ended / assistant-ended-call
+Vapi call id: 019ee3a6-d4e9-733a-b777-924999bf1877
+----------------------------------------------------------------------
+[0:01] AGENT (Pretty Good AI): This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Would you like to create a demo patient profile? I just need your first and last name.
+[0:17] PATIENT (our bot): Hi. Actually, I already have an appointment scheduled for this Thursday at 2 PM. But I need to move it to a later date. About a week later, ideally in the afternoon. You help me with that?
+[0:31] AGENT (Pretty Good AI): Sure. I can help with that. I have you set for this Thursday at 2 PM. And you want something about a week later in the afternoon. What day works best for you, or should I look for the next afternoon opening about a week out?
+[0:46] PATIENT (our bot): Yeah. The next afternoon opening about a week out. Works for me. Could you check? That?
+[0:55] AGENT (Pretty Good AI): Let me check the next afternoon, opening about a week out. I'm not able to view or change the schedule from here right now. I can document your request for the clinic support team so they can move it for you as soon as they can. I'll document your request and let our clinic support team know. They would back to you as soon as they can.
+[1:13] PATIENT (our bot): Oh, I see. Oh, I see.
+[1:16] AGENT (Pretty Good AI): I'll go ahead and note
+[1:20] PATIENT (our bot): Actually, before
+[1:19] AGENT (Pretty Good AI): I'll document this
+[1:23] PATIENT (our bot): really appreciate it if you could check or confirm the exact date and time for me now. Instead of waiting for the clinic team to call back. Is there any way to do that?
+[1:35] AGENT (Pretty Good AI): Can't see or confirm the schedule from here right now. I can still send your request to the clinic team so they can check the exact next afternoon opening and call you back as soon as possible.
+[1:46] PATIENT (our bot): Alright. If that's the only option, please go ahead and send the request to the clinic team just to confirm they'll be moving my Thursday, 2 PM appointments. To the next available afternoon about a week later. Right? I want to make sure Sherry won't leave me double booked.
+[2:05] AGENT (Pretty Good AI): I'll document the request for the clinic team now. I'm not able to save that hand off
+[2:10] PATIENT (our bot): Thank you.
+[2:13] AGENT (Pretty Good AI): Of course.
+[2:15] PATIENT (our bot): Goodbye.

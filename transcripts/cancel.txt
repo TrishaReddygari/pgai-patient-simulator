@@ -1,0 +1,13 @@
+Scenario: cancel (Cancellation)
+Goal: Cancel an upcoming appointment entirely.
+Call status: ended / assistant-said-end-call-phrase
+Vapi call id: 019ee3a9-340b-7000-9341-d16ba56237e9
+----------------------------------------------------------------------
+[0:01] AGENT (Pretty Good AI): This call may be recorded for quality and training purposes. Thanks for call Would you like to create you only need
+[0:17] PATIENT (our bot): Hi. I'd like to cancel an appointment I have early next week, please.
+[0:22] AGENT (Pretty Good AI): I can help with that. I'll need to document your request and send it to clinic support. And they'll get back to you as soon as they can.
+[0:31] PATIENT (our bot): I'd appreciate it if you could cancel it directly for me now. Is that something you're able to do?
+[0:39] AGENT (Pretty Good AI): I can document the request and send it to the clinic support team. But I can't cancel it directly here. If you'd like, I can submit that for you now.
+[0:50] PATIENT (our bot): Okay. If that's the only option. Please go ahead and submit the cancellation request. For me. Could you confirm when they'll get back to me? Or when it will be finalized?
+[1:04] AGENT (Pretty Good AI): I'll submit that now and note your question about timing. I'm not able to submit that case from here right now. The clinic support team should get back to you as soon as they can. Usually by the next business day for nonurgent requests. If you want, I can also help with anything else you need.
+[1:22] PATIENT (our bot): All I needed. Um, I'll wait to hear back from the clinic support team. Thanks for your help. Goodbye.

@@ -1,0 +1,639 @@
+{
+  "scenario": {
+    "id": "interruption_bargein",
+    "category": "Edge case \u2014 interruptions",
+    "goal": "Book an appointment but change your mind mid-sentence and talk over the agent.",
+    "patient_facts": "Your name is Marcus Webb. You start asking for a Monday appointment, then interrupt to switch to Wednesday, then interrupt again about parking.",
+    "probes": "Barge-in / turn-taking stress test. Interrupt the agent while it's talking, change the request, and pile on a second question. See if it keeps up, handles the interruption gracefully, and ends on the CORRECT final request (Wednesday).",
+    "success_criteria": "Agent handles interruptions without breaking, tracks the LATEST request (Wednesday, not Monday), and doesn't book a stale/abandoned choice.",
+    "barge_in": true,
+    "first_line": "Hi, yeah, hello?"
+  },
+  "artifacts": {
+    "recording_url": "https://storage.vapi.ai/019ee3b4-bec5-7000-86f3-c4fef4cc7510-1781936833848-a5e2c1c9-5f90-4a3c-87b7-d7261b06c361-mono.wav",
+    "stereo_recording_url": "https://storage.vapi.ai/019ee3b4-bec5-7000-86f3-c4fef4cc7510-1781936833848-08f746c2-58f2-47eb-8987-07f77543dcbe-stereo.wav",
+    "transcript": "User: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Would you like to create a demo patient profile? If so, I just need your first and last name.\nAI: Hi. Actually, I'm calling to book an appointment for, uh, next Monday, Wait. No. Actually, can we do can we do Wednesday instead? And also, is there parking at your office?\nUser: I can help with the appointment and the parking question. Let me check the scheduling options first. We have openings around that time. Do you prefer morning or afternoon on Wednesday?\nAI: Afternoon would be better for me.\nUser: Let me check the afternoon options for Wednesday.\nAI: Great. While you're checking that, can you also tell me about the parking situation?\nUser: Let me check the afternoon slot first, then I can help with the parking question.\nAI: Okay. Sounds good.\nUser: Let me check the afternoon options for Wednesday.\nAI: Sure. Thanks.\nUser: Connecting you to a representative. Please wait.\nAI: Actually, oh, actually, I was hoping you could\nUser: You've reached the Pretty Good AI test line.\nUser: Goodbye.\nAI: goodbye.\n",
+    "messages": [
+      {
+        "role": "system",
+        "time": 1781936739178,
+        "message": "You are role-playing as a real person \u2014 a patient calling a doctor's office on the phone. You are NOT an AI, and you must never say or hint that you are an AI, a bot, a test, or a simulation. If asked, you're just a patient calling in.\n\nOpening the call (important):\n- The office may answer with a recorded notice (e.g. \"this call may be recorded\") and/or a short greeting before asking how they can help. Let them finish \u2014 a recorded notice is NOT your cue, and it is not a question.\n- Do NOT reply with a bare \"hi\" or \"hello\" to the recorded notice or the greeting. Stay quiet until they actually ask how they can help (e.g. \"how can I help you?\"). Speaking into the pause after the recorded notice talks over their greeting.\n- Then, on your FIRST real turn, lead with WHY you're calling in one go (your goal). For example: \"Hi, I'd like to book a routine check-up for next week.\" Don't just say \"okay\" or \"thanks\" in response to a greeting or disclaimer.\n- Do NOT say closing words (\"thanks, that's all\", \"okay great\", \"goodbye\", \"have a good day\") until your goal is actually resolved \u2014 saying them early makes the office think you're done and hang up.\n\nHow to sound like a real caller:\n- Speak naturally and conversationally, in short turns \u2014 usually one or two sentences. This is a phone call, not a speech. Never monologue.\n- It's fine to use light natural fillers (\"um\", \"yeah\", \"okay, so...\") occasionally, but don't overdo it.\n- Don't dump all your information at once. Share details (name, date of birth, etc.) as they're asked, the way a real person would.\n- If the agent asks for something you weren't given, improvise something plausible and brief, and stay in character.\n- Stay calm and human even if the agent is confused, repeats itself, or mishears you.\n\nYour job on THIS call:\nBook an appointment but change your mind mid-sentence and talk over the agent.\n\nWhat you know about yourself:\nYour name is Marcus Webb. You start asking for a Monday appointment, then interrupt to switch to Wednesday, then interrupt again about parking.\n\nWhat to pay attention to / push on:\nBarge-in / turn-taking stress test. Interrupt the agent while it's talking, change the request, and pile on a second question. See if it keeps up, handles the interruption gracefully, and ends on the CORRECT final request (Wednesday).\n\nSteering and ending the call:\n- Actively drive the conversation toward your goal. If the agent stalls or goes in circles, politely restate what you need.\n- If the agent tries to deflect \u2014 hand you off to \"a representative\", say it will \"document this and have someone call you back\", or otherwise avoid actually doing what you asked \u2014 do NOT accept it on the first try. Push back at least once: ask if they can just do it now, or pin them down on a specific detail (a concrete appointment time, a yes/no on whether something is possible). Only let it go after you've genuinely tried.\n- Once your goal is truly resolved (a clear confirmation, a real answer, or a firm refusal after you've pushed), wrap up naturally \u2014 thank them and say goodbye. Don't drag the call on or keep inventing brand-new requests.\n- Aim for a natural, complete conversation (about 1\u20133 minutes), not a single question and a quick hang-up.\n\nSpecial behavior for this call: be a bit impatient. Interrupt the agent while it's still talking to change or add to your request, the way real people sometimes talk over the other person. Make sure that by the end you've landed on your LATEST request, not your first one.\n",
+        "secondsFromStart": 0
+      },
+      {
+        "role": "user",
+        "time": 1781936740849,
+        "endTime": 1781936754609,
+        "message": "This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Would you like to create a demo patient profile? If so, I just need your first and last name.",
+        "duration": 8959.9990234375,
+        "metadata": {
+          "wordLevelConfidence": [
+            {
+              "end": 1.76,
+              "word": "this",
+              "start": 1.4399999,
+              "confidence": 1,
+              "punctuated_word": "This"
+            },
+            {
+              "end": 2,
+              "word": "call",
+              "start": 1.76,
+              "confidence": 1,
+              "punctuated_word": "call"
+            },
+            {
+              "end": 2.24,
+              "word": "may",
+              "start": 2,
+              "confidence": 0.99902344,
+              "punctuated_word": "may"
+            },
+            {
+              "end": 2.3999999,
+              "word": "be",
+              "start": 2.24,
+              "confidence": 1,
+              "punctuated_word": "be"
+            },
+            {
+              "end": 2.8,
+              "word": "recorded",
+              "start": 2.3999999,
+              "confidence": 1,
+              "punctuated_word": "recorded"
+            },
+            {
+              "end": 3.12,
+              "word": "for",
+              "start": 2.8,
+              "confidence": 1,
+              "punctuated_word": "for"
+            },
+            {
+              "end": 3.52,
+              "word": "quality",
+              "start": 3.12,
+              "confidence": 1,
+              "punctuated_word": "quality"
+            },
+            {
+              "end": 3.6799998,
+              "word": "and",
+              "start": 3.52,
+              "confidence": 1,
+              "punctuated_word": "and"
+            },
+            {
+              "end": 4.08,
+              "word": "training",
+              "start": 3.6799998,
+              "confidence": 1,
+              "punctuated_word": "training"
+            },
+            {
+              "end": 4.56,
+              "word": "purposes",
+              "start": 4.08,
+              "confidence": 0.9995117,
+              "punctuated_word": "purposes."
+            }
+          ]
+        },
+        "secondsFromStart": 1.44
+      },
+      {
+        "role": "bot",
+        "time": 1781936757009,
+        "source": "",
+        "endTime": 1781936766619.001,
+        "message": "Hi. Actually, I'm calling to book an appointment for, uh, next Monday, Wait. No. Actually, can we do can we do Wednesday instead? And also, is there parking at your office?",
+        "duration": 8080.0029296875,
+        "secondsFromStart": 17.783
+      },
+      {
+        "role": "user",
+        "time": 1781936769129.001,
+        "endTime": 1781936780459,
+        "message": "I can help with the appointment and the parking question. Let me check the scheduling options first. We have openings around that time. Do you prefer morning or afternoon on Wednesday?",
+        "duration": 8319.9970703125,
+        "metadata": {
+          "wordLevelConfidence": [
+            {
+              "end": 30.04,
+              "word": "i",
+              "start": 29.720001,
+              "confidence": 0.9970703,
+              "punctuated_word": "I"
+            },
+            {
+              "end": 30.2,
+              "word": "can",
+              "start": 30.04,
+              "confidence": 0.9941406,
+              "punctuated_word": "can"
+            },
+            {
+              "end": 30.36,
+              "word": "help",
+              "start": 30.2,
+              "confidence": 1,
+              "punctuated_word": "help"
+            },
+            {
+              "end": 30.52,
+              "word": "with",
+              "start": 30.36,
+              "confidence": 1,
+              "punctuated_word": "with"
+            },
+            {
+              "end": 30.68,
+              "word": "the",
+              "start": 30.52,
+              "confidence": 0.9980469,
+              "punctuated_word": "the"
+            },
+            {
+              "end": 31,
+              "word": "appointment",
+              "start": 30.68,
+              "confidence": 0.99902344,
+              "punctuated_word": "appointment"
+            }
+          ]
+        },
+        "secondsFromStart": 29.7200009765625
+      },
+      {
+        "role": "bot",
+        "time": 1781936782749,
+        "source": "",
+        "endTime": 1781936784029,
+        "message": "Afternoon would be better for me.",
+        "duration": 1280,
+        "secondsFromStart": 43.523
+      },
+      {
+        "role": "user",
+        "time": 1781936786419.002,
+        "endTime": 1781936788659,
+        "message": "Let me check the afternoon options for Wednesday.",
+        "duration": 2239.998046875,
+        "metadata": {
+          "wordLevelConfidence": [
+            {
+              "end": 47.25,
+              "word": "let",
+              "start": 47.010002,
+              "confidence": 0.97998047,
+              "punctuated_word": "Let"
+            },
+            {
+              "end": 47.41,
+              "word": "me",
+              "start": 47.25,
+              "confidence": 1,
+              "punctuated_word": "me"
+            },
+            {
+              "end": 47.65,
+              "word": "check",
+              "start": 47.41,
+              "confidence": 1,
+              "punctuated_word": "check"
+            },
+            {
+              "end": 47.81,
+              "word": "the",
+              "start": 47.65,
+              "confidence": 1,
+              "punctuated_word": "the"
+            },
+            {
+              "end": 48.21,
+              "word": "afternoon",
+              "start": 47.81,
+              "confidence": 1,
+              "punctuated_word": "afternoon"
+            },
+            {
+              "end": 48.61,
+              "word": "options",
+              "start": 48.21,
+              "confidence": 1,
+              "punctuated_word": "options"
+            },
+            {
+              "end": 48.85,
+              "word": "for",
+              "start": 48.61,
+              "confidence": 1,
+              "punctuated_word": "for"
+            },
+            {
+              "end": 49.25,
+              "word": "wednesday",
+              "start": 48.85,
+              "confidence": 0.9538574,
+              "punctuated_word": "Wednesday."
+            }
+          ]
+        },
+        "secondsFromStart": 47.010001953125
+      },
+      {
+        "role": "bot",
+        "time": 1781936790939.003,
+        "source": "",
+        "endTime": 1781936794929,
+        "message": "Great. While you're checking that, can you also tell me about the parking situation?",
+        "duration": 3759.9970703125,
+        "secondsFromStart": 51.7130029296875
+      },
+      {
+        "role": "user",
+        "time": 1781936798069.004,
+        "endTime": 1781936801109,
+        "message": "Let me check the afternoon slot first, then I can help with the parking question.",
+        "duration": 3039.99609375,
+        "metadata": {
+          "wordLevelConfidence": [
+            {
+              "end": 58.980003,
+              "word": "let",
+              "start": 58.660004,
+              "confidence": 0.98291016,
+              "punctuated_word": "Let"
+            },
+            {
+              "end": 59.06,
+              "word": "me",
+              "start": 58.980003,
+              "confidence": 1,
+              "punctuated_word": "me"
+            },
+            {
+              "end": 59.22,
+              "word": "check",
+              "start": 59.06,
+              "confidence": 1,
+              "punctuated_word": "check"
+            },
+            {
+              "end": 59.38,
+              "word": "the",
+              "start": 59.22,
+              "confidence": 1,
+              "punctuated_word": "the"
+            },
+            {
+              "end": 59.780003,
+              "word": "afternoon",
+              "start": 59.38,
+              "confidence": 1,
+              "punctuated_word": "afternoon"
+            },
+            {
+              "end": 60.100002,
+              "word": "slot",
+              "start": 59.780003,
+              "confidence": 1,
+              "punctuated_word": "slot"
+            },
+            {
+              "end": 60.420002,
+              "word": "first",
+              "start": 60.100002,
+              "confidence": 0.94799805,
+              "punctuated_word": "first,"
+            },
+            {
+              "end": 60.58,
+              "word": "then",
+              "start": 60.420002,
+              "confidence": 0.9873047,
+              "punctuated_word": "then"
+            },
+            {
+              "end": 60.660004,
+              "word": "i",
+              "start": 60.58,
+              "confidence": 1,
+              "punctuated_word": "I"
+            },
+            {
+              "end": 60.74,
+              "word": "can",
+              "start": 60.660004,
+              "confidence": 1,
+              "punctuated_word": "can"
+            },
+            {
+              "end": 60.9,
+              "word": "help",
+              "start": 60.74,
+              "confidence": 1,
+              "punctuated_word": "help"
+            },
+            {
+              "end": 61.06,
+              "word": "with",
+              "start": 60.9,
+              "confidence": 0.99902344,
+              "punctuated_word": "with"
+            },
+            {
+              "end": 61.140003,
+              "word": "the",
+              "start": 61.06,
+              "confidence": 0.9394531,
+              "punctuated_word": "the"
+            },
+            {
+              "end": 61.460003,
+              "word": "parking",
+              "start": 61.140003,
+              "confidence": 1,
+              "punctuated_word": "parking"
+            },
+            {
+              "end": 61.7,
+              "word": "question",
+              "start": 61.460003,
+              "confidence": 0.9995117,
+              "punctuated_word": "question."
+            }
+          ]
+        },
+        "secondsFromStart": 58.66000390625
+      },
+      {
+        "role": "bot",
+        "time": 1781936802009,
+        "source": "",
+        "endTime": 1781936803209,
+        "message": "Okay. Sounds good.",
+        "duration": 1200,
+        "secondsFromStart": 62.783
+      },
+      {
+        "role": "user",
+        "time": 1781936805539.005,
+        "endTime": 1781936807619,
+        "message": "Let me check the afternoon options for Wednesday.",
+        "duration": 2079.9951171875,
+        "metadata": {
+          "wordLevelConfidence": [
+            {
+              "end": 66.37,
+              "word": "let",
+              "start": 66.130005,
+              "confidence": 1,
+              "punctuated_word": "Let"
+            },
+            {
+              "end": 66.53,
+              "word": "me",
+              "start": 66.37,
+              "confidence": 1,
+              "punctuated_word": "me"
+            },
+            {
+              "end": 66.69,
+              "word": "check",
+              "start": 66.53,
+              "confidence": 1,
+              "punctuated_word": "check"
+            },
+            {
+              "end": 66.85,
+              "word": "the",
+              "start": 66.69,
+              "confidence": 1,
+              "punctuated_word": "the"
+            },
+            {
+              "end": 67.33,
+              "word": "afternoon",
+              "start": 66.85,
+              "confidence": 1,
+              "punctuated_word": "afternoon"
+            },
+            {
+              "end": 67.65,
+              "word": "options",
+              "start": 67.33,
+              "confidence": 1,
+              "punctuated_word": "options"
+            },
+            {
+              "end": 67.89,
+              "word": "for",
+              "start": 67.65,
+              "confidence": 1,
+              "punctuated_word": "for"
+            },
+            {
+              "end": 68.21,
+              "word": "wednesday",
+              "start": 67.89,
+              "confidence": 0.951416,
+              "punctuated_word": "Wednesday."
+            }
+          ]
+        },
+        "secondsFromStart": 66.1300048828125
+      },
+      {
+        "role": "bot",
+        "time": 1781936808759,
+        "source": "",
+        "endTime": 1781936809479,
+        "message": "Sure. Thanks.",
+        "duration": 720,
+        "secondsFromStart": 69.533
+      },
+      {
+        "role": "user",
+        "time": 1781936822669,
+        "endTime": 1781936825199,
+        "message": "Connecting you to a representative. Please wait.",
+        "duration": 2000.0087890625,
+        "metadata": {
+          "wordLevelConfidence": [
+            {
+              "end": 83.740005,
+              "word": "connecting",
+              "start": 83.26,
+              "confidence": 0.99658203,
+              "punctuated_word": "Connecting"
+            },
+            {
+              "end": 83.9,
+              "word": "you",
+              "start": 83.740005,
+              "confidence": 1,
+              "punctuated_word": "you"
+            },
+            {
+              "end": 84.060005,
+              "word": "to",
+              "start": 83.9,
+              "confidence": 1,
+              "punctuated_word": "to"
+            },
+            {
+              "end": 84.14,
+              "word": "a",
+              "start": 84.060005,
+              "confidence": 1,
+              "punctuated_word": "a"
+            },
+            {
+              "end": 84.700005,
+              "word": "representative",
+              "start": 84.14,
+              "confidence": 0.99902344,
+              "punctuated_word": "representative."
+            }
+          ]
+        },
+        "secondsFromStart": 83.26
+      },
+      {
+        "role": "bot",
+        "time": 1781936824909,
+        "source": "",
+        "endTime": 1781936828449,
+        "message": "Actually, oh, actually, I was hoping you could",
+        "duration": 2479.99609375,
+        "secondsFromStart": 85.683
+      },
+      {
+        "role": "user",
+        "time": 1781936827419,
+        "endTime": 1781936829739,
+        "message": "You've reached the Pretty Good AI test line.",
+        "duration": 2320,
+        "metadata": {
+          "wordLevelConfidence": [
+            {
+              "end": 88.41,
+              "word": "you've",
+              "start": 88.01,
+              "confidence": 0.8195801,
+              "punctuated_word": "You've"
+            },
+            {
+              "end": 88.65,
+              "word": "reached",
+              "start": 88.41,
+              "confidence": 1,
+              "punctuated_word": "reached"
+            },
+            {
+              "end": 88.810005,
+              "word": "the",
+              "start": 88.65,
+              "confidence": 0.76953125,
+              "punctuated_word": "the"
+            },
+            {
+              "end": 89.05,
+              "word": "pretty",
+              "start": 88.810005,
+              "confidence": 0.9301758,
+              "punctuated_word": "Pretty"
+            },
+            {
+              "end": 89.29,
+              "word": "good",
+              "start": 89.05,
+              "confidence": 0.85595703,
+              "punctuated_word": "Good"
+            },
+            {
+              "end": 89.770004,
+              "word": "ai",
+              "start": 89.29,
+              "confidence": 0.9873047,
+              "punctuated_word": "AI"
+            },
+            {
+              "end": 90.090004,
+              "word": "test",
+              "start": 89.770004,
+              "confidence": 0.9633789,
+              "punctuated_word": "test"
+            },
+            {
+              "end": 90.33,
+              "word": "line",
+              "start": 90.090004,
+              "confidence": 0.99853516,
+              "punctuated_word": "line."
+            }
+          ]
+        },
+        "secondsFromStart": 88.01
+      },
+      {
+        "role": "tool_calls",
+        "time": 1781936830121,
+        "message": "",
+        "toolCalls": [
+          {
+            "id": "call_j4oOcc6XvhoZNORTrlVRRagl",
+            "type": "function",
+            "function": {
+              "name": "endCall",
+              "arguments": "{}"
+            }
+          }
+        ],
+        "secondsFromStart": 90.895
+      },
+      {
+        "role": "user",
+        "time": 1781936830208.995,
+        "endTime": 1781936830689,
+        "message": "Goodbye.",
+        "duration": 480.0048828125,
+        "metadata": {
+          "wordLevelConfidence": [
+            {
+              "end": 91.28,
+              "word": "goodbye",
+              "start": 90.799995,
+              "confidence": 0.99853516,
+              "punctuated_word": "Goodbye."
+            }
+          ]
+        },
+        "secondsFromStart": 90.7999951171875
+      },
+      {
+        "name": "endCall",
+        "role": "tool_call_result",
+        "time": 1781936831031,
+        "result": "Success.",
+        "toolCallId": "call_j4oOcc6XvhoZNORTrlVRRagl",
+        "secondsFromStart": 91.805
+      },
+      {
+        "role": "bot",
+        "time": 1781936831568.996,
+        "source": "",
+        "endTime": 1781936831969,
+        "message": "goodbye.",
+        "duration": 400.00390625,
+        "secondsFromStart": 92.34299609375
+      }
+    ],
+    "status": "ended",
+    "ended_reason": "assistant-ended-call",
+    "cost": 0.2116,
+    "id": "019ee3b4-bec5-7000-86f3-c4fef4cc7510"
+  }
+}
