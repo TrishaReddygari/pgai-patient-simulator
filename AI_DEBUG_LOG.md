@@ -27,7 +27,9 @@ opening finish (`startSpeakingPlan.waitSeconds` → 2.2), and told the persona n
 a bare "hi" — wait until they ask how they can help, then lead with the request.
 
 **Verified:** re-ran `python run.py --scenario simple_schedule` and checked the new transcript
-+ recording — the bot now waits through the full greeting before speaking.
++ recording — the bot now waits through the full greeting before speaking. Before/after
+recordings are in `iteration-evidence/` (e.g. `before_simple_schedule.mp3` vs
+`recordings/simple_schedule.mp3`).
 
 ---
 
